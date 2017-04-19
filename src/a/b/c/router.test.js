@@ -5,7 +5,7 @@ import React from 'react';
 const context = createRouterContext({history: hrt});
 
 it('pressing BtnsGroup.ActivityFlowBtns should change route to desired flow', async () => {
-  wrapper = mount(<Layout />, { context });
+  const wrapper = mount(<Layout />, { context });
 
   const CreateContentBtn = wrapper.find('.Btn').at(1);
   CreateContentBtn.simulate('click');
